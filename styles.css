@@ -116,23 +116,14 @@ button { font: inherit; }
 
 .contact { position: relative; overflow: hidden; background-color: var(--ink); background-image: radial-gradient(#666 1px, transparent 1.2px), linear-gradient(135deg, #151515 25%, transparent 25%, transparent 75%, #151515 75%); background-size: 6px 6px, 48px 48px; color: white; }
 .contact > * { text-shadow: 2px 2px 0 var(--ink), -2px -2px 0 var(--ink); }
-.contact .section-label, .contact .social-links, .contact .contact-form { position: relative; z-index: 1; }
+.contact .section-label, .contact .social-links, .contact .contact-link { position: relative; z-index: 1; }
 .contact::after { position: absolute; right: -60px; bottom: -180px; content: "JMP"; color: transparent; font-size: 390px; font-weight: 1000; letter-spacing: -.12em; -webkit-text-stroke: 1px #555; text-shadow: 10px 0 #181818, 20px 10px #181818, -10px 10px #181818; pointer-events: none; }
 .contact .section-label { position: relative; z-index: 1; border-color: #777; }
 .contact > p:not(.edit-hint) { position: relative; z-index: 1; margin: 61px 0 16px; font: bold 11px var(--mono); }
 .contact h2 { position: relative; z-index: 1; font-size: clamp(75px, 13vw, 175px); }
 .contact h2 span { color: var(--red); }
-.contact-form { width: min(100%, 680px); margin-top: 36px; display: grid; gap: 10px; }
-.contact-form label { margin-top: 8px; font: bold 12px var(--mono); }
-.contact-form label span { color: #aaa; font-weight: normal; }
-.contact-form input, .contact-form textarea { width: 100%; min-height: 48px; padding: 12px; border: 1px solid #888; border-radius: 0; background: #202020; color: white; font: 16px/1.5 var(--sans); text-shadow: none; }
-.contact-form textarea { min-height: 140px; resize: vertical; }
-.contact-form input:focus-visible, .contact-form textarea:focus-visible { outline: 3px solid var(--red); outline-offset: 2px; }
-.contact-form__note, .contact-form__status { margin: 4px 0; color: #ccc; font-size: 13px; line-height: 1.5; text-shadow: none; }
-.contact-form__status:empty { display: none; }
-.contact-form__submit { width: fit-content; min-height: 48px; margin-top: 8px; padding: 12px 16px; border: 2px solid white; background: var(--red); color: white; font: bold 13px var(--mono); cursor: pointer; }
-.contact-form__submit:hover { background: white; color: var(--ink); }
-.contact-form__submit span { margin-left: 18px; }
+.contact-link { position: relative; z-index: 1; display: inline-block; margin-top: 36px; padding-bottom: 8px; border-bottom: 2px solid white; font: bold clamp(14px, 2.4vw, 25px) var(--mono); }
+.contact-link b { margin-left: 20px; color: var(--red); }
 .social-links { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 24px; margin-top: 70px; font: bold 10px var(--mono); }
 .social-links a:hover { color: var(--red); }
 .site-footer { min-height: 55px; padding: 14px 5.5%; display: flex; justify-content: space-between; gap: 15px; border-top: 4px solid var(--red); background-color: #d7d7d4; background-image: repeating-linear-gradient(90deg, transparent 0 23px, rgba(0,0,0,.08) 24px 25px); font: bold 9px var(--mono); }
@@ -484,9 +475,6 @@ html.motion-ready .project-card:nth-child(3) { transition-delay: .2s; }
 .contact > p:not(.edit-hint) { font-size: 15px; }
 .social-links { font-size: 14px; }
 .site-footer { font-size: 14px; }
-.contact-form label { font-size: 15px; }
-.contact-form__note, .contact-form__status { font-size: 15px; }
-.contact-form__submit { font-size: 15px; }
 
 p { font-weight: 600; }
 .project-meta { font-weight: 700; }

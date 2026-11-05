@@ -16,10 +16,6 @@ siteNav.addEventListener("click", (event) => {
 
 document.querySelector("#current-year").textContent = new Date().getFullYear();
 
-if (new URLSearchParams(window.location.search).get("contact") === "success") {
-  document.querySelector("#contact-status").textContent = "Gracias, tu mensaje se ha enviado correctamente.";
-}
-
 const musicToggle = document.querySelector(".music-toggle");
 const musicLabel = musicToggle.querySelector(".music-toggle__label");
 const elevatorMelody = [72, 76, 79, 76, 74, 77, 81, 77, 72, 76, 79, 84, 81, 77, 76, 72];
